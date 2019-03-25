@@ -1,7 +1,8 @@
 <input 
   [(ngModel)]="searchText" 
   class="fixed game-browser__search-game"
-  placeholder="search a game by its name">
+  placeholder="Search a game by its name">
+<button (click)="sort()">Sort by Name {{this.isDesc ? 'descending': 'ascending'}}</button>
 <div class="game-browser card">
   <div class="card-body">
     <div class="list-group">

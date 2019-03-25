@@ -10,6 +10,7 @@ import { Game } from './game';
 export class GameBrowserComponent implements OnInit {
   games: Game[];
   errorMessage: string;
+  isDesc: boolean;
   constructor(private gameBrowserService: GameBrowserService) { }
 
   ngOnInit() {
@@ -19,6 +20,22 @@ export class GameBrowserComponent implements OnInit {
       },
       (err: any) => this.errorMessage = err.error
     );
+  }
+  sort() {
+    this.isDesc = !this.isDesc; //change the direction    
+    const direction = this.isDesc ? 1 : -1;
+    console.log(this.isDesc);
+    this.games.sort((a, b) => {
+      if (a.Name < b.Name) {
+        return -1 * direction;
+      }
+      else if (a.Name > b.Name) {
+        return 1 * direction;
+      }
+      else {
+        return 0;
+      }
+    });
   }
 
 }
