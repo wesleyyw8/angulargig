@@ -1,8 +1,12 @@
-<div class="card">
+<input 
+  [(ngModel)]="searchText" 
+  class="fixed game-browser__search-game"
+  placeholder="search a game by its name">
+<div class="game-browser card">
   <div class="card-body">
     <div class="list-group">
       <a href="#" 
-      *ngFor="let game of games"
+      *ngFor="let game of games | filter : searchText"
       class="list-group-item list-group-item-action flex-column align-items-start">
         <div class="d-flex w-100 justify-content-between">
           <h5 class="mb-1">{{game.Name}}</h5>

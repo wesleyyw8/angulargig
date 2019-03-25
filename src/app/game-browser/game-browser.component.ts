@@ -16,7 +16,6 @@ export class GameBrowserComponent implements OnInit {
     this.gameBrowserService.getGames().subscribe(
       (games: Game[]) => {
         this.games = games;
-        console.log(games);
       },
       (err: any) => this.errorMessage = err.error
     );

@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { UserComponent } from './home/user/user.component';
 import { GameBrowserComponent } from './game-browser/game-browser.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FilterPipe } from './game-browser/filter.pipe';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     PageNotFoundComponent,
     LoginComponent,
     UserComponent,
-    GameBrowserComponent
+    GameBrowserComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
