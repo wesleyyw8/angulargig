@@ -12,6 +12,8 @@ import { LoginComponent } from './home/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { UserComponent } from './home/user/user.component';
 import { GameBrowserComponent } from './game-browser/game-browser.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { GameBrowserComponent } from './game-browser/game-browser.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ModalModule.forRoot()
   ],
   providers: [],

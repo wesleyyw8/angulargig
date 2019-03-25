@@ -12,8 +12,8 @@ export class MenuComponent implements OnInit {
   pageTitle = 'Wesley Rebelo';
   modalRef: BsModalRef;
   constructor(private modalService: BsModalService,
-    private authService: AuthService,
-    private router: Router) {}
+              private authService: AuthService,
+              private router: Router) {}
 
   openModal(template: TemplateRef<any>) {
     this.modalRef = this.modalService.show(template);
