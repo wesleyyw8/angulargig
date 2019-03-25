@@ -11,6 +11,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { LoginComponent } from './home/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { UserComponent } from './home/user/user.component';
+import { GameBrowserComponent } from './game-browser/game-browser.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UserComponent } from './home/user/user.component';
     WelcomeComponent,
     PageNotFoundComponent,
     LoginComponent,
-    UserComponent
+    UserComponent,
+    GameBrowserComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import { ShellComponent } from './home/shell.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { PageNotFoundComponent } from './home/page-not-found.component';
 import { AuthGuard } from './home/user/auth-guard.service';
+import { GameBrowserComponent } from './game-browser/game-browser.component';
 
 
 const appRoutes: Routes = [
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
         canActivate: [AuthGuard],
         component: UserComponent
       },
+      { path: 'gameBrowser', component: GameBrowserComponent },
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
     ]
   },
