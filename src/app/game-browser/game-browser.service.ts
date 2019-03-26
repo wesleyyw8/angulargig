@@ -21,7 +21,7 @@ export class GameBrowserService {
     }
     return this.http.get<Game[]>(this.gamesUrl)
       .pipe(
-        tap(data => console.log(JSON.stringify(data))),
+        tap(data => console.log('data loaded')),
         catchError(this.handleError)
       );
   }

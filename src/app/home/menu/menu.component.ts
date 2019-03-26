@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
-import { AuthService } from './login/auth.service';
+import { AuthService } from '../login/auth.service';
 
 @Component({
   selector: 'app-menu',

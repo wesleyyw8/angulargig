@@ -22,4 +22,9 @@ describe('UserComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should render user name', () => {
+    component.userName = 'wesley';
+    fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('p').textContent).toContain('wesley');
+  });
 });

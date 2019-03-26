@@ -2,7 +2,7 @@ import { UserComponent } from './home/user/user.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ShellComponent } from './home/shell.component';
-import { WelcomeComponent } from './home/welcome.component';
+import { WelcomeComponent } from './home/welcome/welcome.component';
 import { PageNotFoundComponent } from './home/page-not-found.component';
 import { AuthGuard } from './home/user/auth-guard.service';
 import { GameBrowserComponent } from './game-browser/game-browser.component';
